@@ -1,0 +1,7 @@
+{
+  "name": "AgriSights - AI Farm Monitor",
+  "description": "Satellite-based farm monitoring using NDVI/NDWI indices and AI interpretation.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
