@@ -168,7 +168,7 @@ SEN12MS-CR-TS work and dataset, as described in their repository.
 
 ## 8. Results
 
-<p align="center"> <img width="1920" height="1080" alt="result_image" src="https://github.com/user-attachments/assets/18431892-e319-4653-a470-3a5e73061176" /> </p>
+<p align="center"> <img width="1714" height="922" alt="result_image" src="https://github.com/user-attachments/assets/2a15ec26-24bc-4b15-94f2-4425c9f8cab3" /> </p>
 
 The left tiles contain the input modalities (SAR + cloudy optical + mask),
 while the right tiles show the predicted cloud-free reflectance compared to
