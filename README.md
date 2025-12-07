@@ -154,6 +154,7 @@ simple gallery.
 
 ## 6. Notes
 Training is GPU-intensive: I use an NVIDIA RTX 3060 Laptop GPU (6 GB).
+<img width="1299" height="1007" alt="image" src="https://github.com/user-attachments/assets/35d223de-4f79-400a-84f1-4f7a2d0ef617" />
 
 The first few iterations are slow because of data loading and model
 initialization; later iterations become faster.
