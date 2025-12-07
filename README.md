@@ -50,7 +50,7 @@ New folder/
 └── SEN12_results/          # where checkpoints + web images will be saved
 ```
 
-2. Dataset
+## 2. Dataset
 Sentinel_Project/ must follow the structure expected by the official data
 loader:
 
@@ -72,7 +72,7 @@ Sentinel_Project/
 You can obtain this layout by downloading the original archives and merging
 their subfolders into a single directory.
 
-3. Baseline ResNet checkpoint
+## 3. Baseline ResNet checkpoint
 Download the initial ResNet model (provided by the authors) into
 SEN12MS-CR-TS/models/:
 
@@ -81,7 +81,7 @@ cd SEN12MS-CR-TS/models
 wget https://syncandshare.lrz.de/dl/fiFfN2bj6DaFXfGEGAaAvdZE/baseline_resnet.pth
 (or download manually and place as models/baseline_resnet.pth)
 ```
-4. Training command
+## 4. Training command
 From inside SEN12MS-CR-TS/ with torchenv activated:
 
 ```bash
@@ -108,7 +108,7 @@ update_html_freq, display_freq – write PNGs/HTML every 5 iterations
 
 save_latest_freq 20, save_epoch_freq 1 – checkpoint saving schedule
 
-5. Outputs & result interpretation
+## 5. Outputs & result interpretation
 After starting training, the script creates:
 
 ```text
@@ -152,7 +152,7 @@ true cloud-free target (real_B)
 You can open web/index.html in a browser to see the same images in a
 simple gallery.
 
-6. Notes
+## 6. Notes
 Training is GPU-intensive: I use an NVIDIA RTX 3060 Laptop GPU (6 GB).
 
 The first few iterations are slow because of data loading and model
@@ -161,7 +161,14 @@ initialization; later iterations become faster.
 For full training on the entire dataset, increase max_dataset_size
 and train for more epochs (niter, niter_decay).
 
-7. Citation
+## 7. Citation
 If you use this code or the trained model, please also cite the original
 SEN12MS-CR-TS work and dataset, as described in their repository.
 
+## 8. Results
+
+<p align="center"> <img width="1920" height="1080" alt="result_image" src="https://github.com/user-attachments/assets/18431892-e319-4653-a470-3a5e73061176" /> </p>
+
+The left tiles contain the input modalities (SAR + cloudy optical + mask),
+while the right tiles show the predicted cloud-free reflectance compared to
+the true cloud-free Sentinel-2 patch.
